@@ -2,6 +2,7 @@
 dist: xenial
 
 before_install:
+  - pyenv global system 3.6.7
   - sudo apt-get update
   - sudo apt-get install -y tidy
 # before_install:
