@@ -2,7 +2,6 @@
 
 Ejercicios de ejemplo para el TFM sobre autocorrección interactiva para la enseñanza/aprendizaje de la programación https://github.com/erseco/ugr_tfm_maes
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub](https://img.shields.io/github/license/erseco/ugr_tfm_maes_sample_exercises.svg)](https://github.com/erseco/ugr_tfm_maes_sample_exercises/blob/master/LICENSE)
 [![GitHub](https://img.shields.io/github/forks/erseco/ugr_tfm_maes_sample_exercises.svg)](https://github.com/erseco/ugr_tfm_maes_sample_exercises/network)
 [![Build Status](https://travis-ci.com/erseco/ugr_tfm_maes_sample_exercises.svg?branch=master)](https://travis-ci.com/erseco/ugr_tfm_maes_sample_exercises)
