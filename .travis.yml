@@ -1,0 +1,10 @@
+---
+language: python
+
+# before_install:
+#   - docker build -t erseco/ugr_tfm_maes .
+
+script:
+  - pytest --verbose homework_01/*.py
+
+  - tidy -quiet -errors homework_04/*.html
