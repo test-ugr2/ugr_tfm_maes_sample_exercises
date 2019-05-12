@@ -1,10 +1,28 @@
 ---
-language: python
+dist: xenial
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y tidy
+# before_install:
+  - pip install --upgrade pip
+install:
+#   - pip install -r requirements/dev.txt
+  - pip install pytest
+# script:
+#   - coverage run -m pytest
 
 # before_install:
 #   - docker build -t erseco/ugr_tfm_maes .
 
+
 script:
+  - echo "Testing that we have all the requirements"
+  - python --version
+  - ruby --version
+  - gcc --version
+  - tidy --version
+
   - pytest --verbose homework_01/*.py
 
   - tidy -quiet -errors homework_04/*.html
