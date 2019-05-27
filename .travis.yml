@@ -23,7 +23,7 @@ script:
   - gcc --version
   - tidy --version
 
-  - pycodestyle homework_01/*.py
-  - pytest --verbose homework_01/*.py
+  - pycodestyle homework_01_python/*.py
+  - pytest --verbose homework_01_python/*.py
 
-  - tidy -quiet -errors homework_04/*.html
+  - tidy -quiet -errors homework_04_html/*.html
