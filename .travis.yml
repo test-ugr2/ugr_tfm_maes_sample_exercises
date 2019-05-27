@@ -26,4 +26,10 @@ script:
   - pycodestyle homework_01_python/*.py
   - pytest --verbose homework_01_python/*.py
 
+  - ruby homework_02_ruby/exercise_01.rb
+
+
+  - gcc -o exercise_01 homework_03_c/exercise_01.c
+  - ./exercise_01
+
   - tidy -quiet -errors homework_04_html/*.html
