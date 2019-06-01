@@ -1,4 +1,4 @@
-# h1 Heading 8-)
+#h1 Heading 8-)
 
 ## h2 Heading
 
@@ -14,6 +14,7 @@
 
 ___
 
+
 ## Typographic replacements
 
 Enable typographer option to see result.
@@ -28,9 +29,9 @@ test.. test... test..... test?..... test!....
 
 ## Emphasis
 
-Text  **This is bold text**
+Text **This is bold text**
 
-Text  __This is bold text__
+Text __This is bold text__
 
 Text *This is italic text*
 
@@ -82,3 +83,5 @@ Right aligned columns
 [link text](http://dev.nodeca.com)
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
