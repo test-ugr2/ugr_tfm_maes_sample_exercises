@@ -26,7 +26,7 @@ script:
   - gcc --version
   - tidy --version
 
-  - mdl homework_00_git
+  - mdl homework_00_git/
 
   - pycodestyle homework_01_python/*.py
   - pytest --verbose homework_01_python/*.py
