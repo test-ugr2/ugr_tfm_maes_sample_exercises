@@ -26,6 +26,6 @@ script:
   - rspec homework_02_ruby
 
   - cppcheck --verbose --error-exitcode=2 homework_03_c/*.c
-  - cd homework_03_c && make tests
+  - make -C homework_03_c tests
 
   - tidy -quiet -errors homework_04_html/*.html
