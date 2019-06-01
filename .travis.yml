@@ -4,19 +4,10 @@ dist: xenial
 before_install:
   - pyenv global system 3.6.7
   - sudo apt-get update
-  - sudo apt-get install -y tidy
-# before_install:
+  - sudo apt-get install -y tidy cppcheck
 install:
-#   - pip install -r requirements/dev.txt
   - pip3 install pytest pycodestyle
-  - gem install mdl
-
-# script:
-#   - coverage run -m pytest
-
-# before_install:
-#   - docker build -t erseco/ugr_tfm_maes .
-
+  - gem install rspec rubocop mdl
 
 script:
   - echo "Testing that we have all the requirements"
@@ -31,10 +22,10 @@ script:
   - pycodestyle homework_01_python/*.py
   - pytest --verbose homework_01_python/*.py
 
-  - ruby homework_02_ruby/exercise_01.rb
+  - rubocop homework_02_ruby
+  - rspec homework_02_ruby
 
-
-  - gcc -o exercise_01 homework_03_c/exercise_01.c
-  - ./exercise_01
+  - cppcheck --verbose --error-exitcode=2 homework_03_c/*.c
+  - make -C homework_03_c tests
 
   - tidy -quiet -errors homework_04_html/*.html
