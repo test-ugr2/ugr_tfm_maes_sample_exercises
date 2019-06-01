@@ -18,10 +18,9 @@
 
 
 int get_factorial(int number) {
-    if (number == 0) {
-        return 1;
-    }
-    return number * get_factorial(number - 1);
+
+    // insert here your code
+
 }
 
 // ------- START TDD TESTS DEFINITION -----------
