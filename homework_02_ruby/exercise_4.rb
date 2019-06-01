@@ -12,14 +12,12 @@
 # Hints:
 # Use the open-uri module to read the web content
 # Use a regular expression to process the HTML
-require 'open-uri'
 
 # rubocop:disable Security/Open
 def get_title(url)
-  open(url) do |f|
-    str = f.read
-    str.scan(%r{<title>(.*?)</title>})
-  end
+
+ #  Insert your code here
+
 end
 # rubocop:enable Security/Open
 
