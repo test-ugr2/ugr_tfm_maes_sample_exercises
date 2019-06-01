@@ -21,26 +21,8 @@
 
 
 def play_game(option1, option2):
-
-    if option1 == option2:
-        return("It's a tie!")
-    elif option1 == 'rock':
-        if option2 == 'scissors':
-            return("Rock wins!")
-        else:
-            return("Paper wins!")
-    elif option1 == 'scissors':
-        if option2 == 'paper':
-            return("Scissors win!")
-        else:
-            return("Rock wins!")
-    elif option1 == 'paper':
-        if option2 == 'rock':
-            return("Paper wins!")
-        else:
-            return("Scissors win!")
-    else:
-        return("Invalid input!")
+    # Insert here your code and remove `pass` keyword
+    pass
 
 
 # ------- START TDD TESTS DEFINITION -----------
