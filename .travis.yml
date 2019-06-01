@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install -y tidy cppcheck
 install:
-  - pip3 install pytest pycodestyle requests
+  - pip3 install pytest pycodestyle requests beautifulsoup4
   - gem install rspec rubocop mdl
 
 script:
