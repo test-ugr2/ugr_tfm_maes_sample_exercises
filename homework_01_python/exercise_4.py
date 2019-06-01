@@ -19,10 +19,13 @@ from bs4 import BeautifulSoup
 
 def get_title(url):
 
+    # This function gets the url as parameter and parses the webpage to obtain the title
+
     r = requests.get(url)
     soup = BeautifulSoup(r.text, features="html.parser")
 
     return soup.title.contents[0]
+
 
 
 # ------- START TDD TESTS DEFINITION -----------
@@ -52,3 +55,4 @@ if __name__ == "__main__":
 
     else:
         print("Usage: %s <url>" % sys.argv[0])
+
