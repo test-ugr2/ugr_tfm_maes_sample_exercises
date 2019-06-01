@@ -9,6 +9,8 @@ before_install:
 install:
 #   - pip install -r requirements/dev.txt
   - pip3 install pytest pycodestyle
+  - gem install mdl
+
 # script:
 #   - coverage run -m pytest
 
@@ -18,10 +20,13 @@ install:
 
 script:
   - echo "Testing that we have all the requirements"
+  - mdl --version
   - python3 --version
   - ruby --version
   - gcc --version
   - tidy --version
+
+  - mdl homework_00_git
 
   - pycodestyle homework_01_python/*.py
   - pytest --verbose homework_01_python/*.py
